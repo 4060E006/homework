@@ -1,0 +1,25 @@
+=========================================================================
+//  Created by www.runoob.com on 15/11/9.
+//  Copyright © 2015年 菜鸟教程. All rights reserved.
+//
+
+#include <stdio.h>
+int main()
+{
+    int i,num;
+    num=2;
+    for(i=0;i<3;i++)
+    {
+        printf("num 变量为 %d \n",num);
+        num++;
+        {
+            auto int num=1;
+            printf("内置模块 num 变量为 %d \n",num);
+            num++;
+        }
+    }
+    return 0;
+}
+
+// auto int num=1;??
+=============================================================================
