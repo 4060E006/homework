@@ -1,25 +1,26 @@
 =========================================================================
-//  Created by www.runoob.com on 15/11/9.
-//  Copyright © 2015年 菜鸟教程. All rights reserved.
-//
-
-#include <stdio.h>
+c++
+=========================================================================
+#include <iostream>
+using namespace std;
 int main()
 {
-    int i,num;
-    num=2;
-    for(i=0;i<3;i++)
-    {
-        printf("num 变量为 %d \n",num);
-        num++;
-        {
-            auto int num=1;
-            printf("内置模块 num 变量为 %d \n",num);
-            num++;
-        }
-    }
+    cout << "Hello, world!" << endl;
     return 0;
 }
-
-// auto int num=1;??
+============================================================================
+java
 =============================================================================
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}
+=============================================================================
+c++ 要#include<iostream>
+宣告using namespace std，後面不管使用cin/cout都可以不必加上std:
+c++ 是 cout 
+java 是 println
+===================================================================================
+
+
