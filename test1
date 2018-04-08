@@ -272,5 +272,5 @@ cout=printf cin=scanf
 #include <iostream>
 #include <iomanip>
 using namespace std;
-這些差異之外 沒甚麼特別的。
+然後cout的方式 是直接由左到右 然後括號換成<<
 ===============================================================================
