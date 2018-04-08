@@ -56,8 +56,7 @@ java
 	/*System.out.println("請輸入攝氏溫度");
 	Scanner input = new Scanner(System.in);
 	int a = input.nextInt();
-	double b = 1.8;
-	System.out.println("華式="+(a*b+32));*/
+	System.out.println("華式="+(a*9/5+32));*/
 ===============================================================================
 有1、2、3、4個數字，能組成多少個互不相同且無重複數字的三位數？都是多少？
 
@@ -71,4 +70,201 @@ java
     				System.out.println(a*100+b*10+c);
     			}
                      System.out.println("總共有"+d+"個");*/
+===============================================================================
+溫度轉換
+
+System.out.println("現在溫度單位? 攝氏=1 華氏=2");
+	Scanner input = new Scanner(System.in);
+	int a = input.nextInt();
+	if(a !=1 && a !=2){
+		System.out.println("Error");
+	} else {
+		System.out.println("請輸入溫度");
+		
+		Float n = input.nextFloat();
+		if (a == 1){
+		System.out.println("攝氏"+n+" = "+"華式"+(n*9/5+32));	
+		} else {
+			System.out.println("華氏"+n+" = "+"攝式"+(n - 32)*5/9);	
+		}
+	} 
+===============================================================================
+印出一個C
+
+       System.out.println("列印出一個C");
+       System.out.println("****");
+       System.out.println("*");
+       System.out.println("*");
+       System.out.println("****")
+===============================================================================
+商數餘數
+
+        System.out.println("請輸入一個整數");
+		Scanner input = new Scanner(System.in);
+		int a = input.nextInt();
+		System.out.println("此數除以五的商數:"+(a/5)+" 餘數:"+(a%5));
+===============================================================================	
+成績判定
+
+       System.out.println("請輸入成績");
+		Scanner input = new Scanner(System.in);
+		int a = input.nextInt();
+		if(a>=90 && a<=100){
+			System.out.println("good");
+		}
+		else if (a>=80 && a<90) {
+			System.out.println("ok");
+		}
+		else if (a>=70 && a<80) {
+			System.out.println("soso");
+		}
+		else if (a>=60 && a<70) {
+			System.out.println("safe");
+		}
+		else if (a<60 && a>0) {
+			System.out.println("GG");
+		}
+		else if (a>100 || a<0) {
+			System.out.println("error");
+		}
+===============================================================================	
+ 1+2+3+...+n
+ 
+       System.out.println("輸入一個數");
+		Scanner input = new Scanner(System.in);
+		int sum = 0;
+		int n = input.nextInt();
+		for(int a=1;a<=n;a++){
+			sum+=a;
+		}
+		System.out.println("累加數="+sum);
+===============================================================================
+C
+===============================================================================
+加法
+
+	int a,b;
+	printf("輸入兩個數字\n");
+	scanf("%d %d",&a,&b);
+	printf("%d+%d=%d\n",a,b,a+b);
+	
+	system("pause");
+	return 0;	
+===============================================================================
+99乘法表
+
+    for(int i = 1 ; i< 10 ; i++){
+	for(int j = 1 ; j <10 ; j++){
+	printf("%dx%d=%d\t",i,j,i*j);}
+	printf("\n");}
+	system("pause");
+	return 0;
+===============================================================================
+攝氏轉華氏
+
+    printf("請輸入攝氏溫度\n");
+	float a;
+	scanf("%f",&a);
+	printf("華式=%f",a*9/5+32);
+	system("pause");
+	return 0;
+===============================================================================
+有1、2、3、4個數字，能組成多少個互不相同且無重複數字的三位數？都是多少？
+
+	int a,b,c;
+    int d=0;
+    for(a=1;a<5;a++) 
+    	for(b=1;b<5;b++) 
+    		for(c=1;c<5;c++) 
+    			if ((a != b) && (a != c) && (b != c)){
+    				d+=1;
+    				printf("%d,%d,%d\n",a,b,c);
+    			}
+                     printf("總共有%d個",d);
+}
+===============================================================================
+溫度轉換
+
+printf("現在溫度單位? 攝氏=1 華氏=2\n");
+    int a;
+    float n;
+	scanf("%d",&a);
+	if(a !=1 && a !=2){
+		printf("Error");
+	} else {
+		printf("請輸入溫度\n");
+		
+		scanf("%f",&n);
+		if (a == 1){
+		printf("攝氏%f=華式%f",n,(n*9/5+32));	
+		} else {
+		printf("華氏%f=攝式%f",n,(n - 32)*5/9);	
+		}
+	} 
+===============================================================================	
+   印出一個C
+   
+       printf("列印出一個C\n");
+       printf("****\n");
+       printf("*\n");
+       printf("*\n");
+       printf("****\n");      
+	   system("pause");
+	return 0;
+===============================================================================
+商數餘數
+
+printf("請輸入一個整數\n");
+	int a; 
+	scanf("%d",&a);	
+	printf("此數除以五的商數:%d 餘數%d",(a/5),(a%5));
+	system("pause");
+	return 0;
+===============================================================================
+成績判定
+
+printf("請輸入成績");
+	    int a;
+		scanf("%d",&a);
+		if(a>=90 && a<=100){
+			printf("good");
+		}
+		else if (a>=80 && a<90) {
+			printf("ok");
+		}
+		else if (a>=70 && a<80) {
+			printf("soso");
+		}
+		else if (a>=60 && a<70) {
+			printf("safe");
+		}
+		else if (a<60 && a>0) {
+			printf("GG");
+		}
+		else if (a>100 || a<0) {
+			printf("error");
+		}            
+===============================================================================
+1+2+3+...+n
+
+printf("輸入一個數\n");
+		int sum = 0;
+		int n;
+		scanf("%d",&n);
+		for(int a=1;a<=n;a++){
+			sum+=a;
+		}
+		printf("累加數=%d",sum);  
+===============================================================================	
+總結
+c的printf不用像java前面還要打System.out.
+c的接收使用者輸入只要scanf 
+java要
+import java.util.Scanner;
+Scanner input = new Scanner(System.in);
+int a = input.nextInt(); 
+真的是有夠麻煩
+還有printf印的方式 java印出a+b=c要("a"+"+"+"b"+"="+c);
+C只要("%d+%d=%d",a,,b,c);
+用起來還是C比較方便
 ===============================================================================
