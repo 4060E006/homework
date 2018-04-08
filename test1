@@ -267,4 +267,10 @@ int a = input.nextInt();
 還有printf印的方式 java印出a+b=c要("a"+"+"+"b"+"="+c);
 C只要("%d+%d=%d",a,,b,c);
 用起來還是C比較方便
+至於c++ 目前寫下來的差異 
+cout=printf cin=scanf 
+#include <iostream>
+#include <iomanip>
+using namespace std;
+這些差異之外 沒甚麼特別的。
 ===============================================================================
