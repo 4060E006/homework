@@ -1,3 +1,5 @@
+###### 作業1
+***
 #include <iostream>
 using namespace std;
 
@@ -26,3 +28,47 @@ int main()
   system("pause");
   return 0;
 }
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  const int NUMBER_OF_ELEMENTS = 5;
+  double numbers_squared[NUMBER_OF_ELEMENTS];
+  double numbers[NUMBER_OF_ELEMENTS];
+ 
+  double sum = 0;
+
+  for (int i = 0; i < NUMBER_OF_ELEMENTS; i++)
+  {
+    cout << "請輸入一個數字: ";
+    cin >> numbers[i];
+    sum += numbers[i];
+    numbers_squared[i] = numbers[i]*numbers[i]; 
+  }
+
+  cout << "number1 的平方是:" << numbers_squared[0] << endl;
+  cout << "number2 的平方是:" << numbers_squared[1] << endl;
+  cout << "number3 的平方是:" << numbers_squared[2] << endl;
+  cout << "number4 的平方是:" << numbers_squared[3] << endl;
+  cout << "number5 的平方是:" << numbers_squared[4] << endl; 
+    
+  double average = sum / NUMBER_OF_ELEMENTS;
+
+  int count = 0; // The number of elements above average
+  for (int i = 0; i < NUMBER_OF_ELEMENTS; i++)
+    if (numbers[i] > average)
+      count++;
+***      
+
+  
+  
+  cout << "平均值=  " << average << endl;
+  cout << "超過平均值的數有 " << count << endl;
+  system("pause");
+  return 0;
+  
+  
+}
+
