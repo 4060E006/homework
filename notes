@@ -1,6 +1,6 @@
 
- `  
-Scanner input = new Scanner(System.in);
+  
+`Scanner input = new Scanner(System.in);`
 		String instr = input.nextLine();
 		String [] arrstr = instr.split(" ");
 		int []arrint = new int[arrstr.length];
@@ -14,5 +14,5 @@ Scanner input = new Scanner(System.in);
 			if (mini > arrint[i]) mini = arrint[i];
 		}
 		System.out.println(maxi+mini);
- `   
+    
     
