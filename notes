@@ -1,4 +1,4 @@
-### 0412
+
   
 Scanner input = new Scanner(System.in);
 		String instr = input.nextLine();
