@@ -1,6 +1,6 @@
 
   
-`Scanner input = new Scanner(System.in);`
+Scanner input = new Scanner(System.in);
 		String instr = input.nextLine();
 		String [] arrstr = instr.split(" ");
 		int []arrint = new int[arrstr.length];
