@@ -1,0 +1,18 @@
+======================================================================================
+
+Scanner input = new Scanner(System.in);
+		String instr = input.nextLine();
+		String [] arrstr = instr.split(" ");
+		int []arrint = new int[arrstr.length];
+		for (int i=0;i<arrstr.length;i++){
+			arrint[i] = Integer.parseInt(arrstr[i]);
+		}
+		int maxi = 0;
+		int mini = 100000;
+		for (int i=0;i<arrstr.length;i++){
+			if (maxi < arrint[i]) maxi = arrint[i];
+			if (mini > arrint[i]) mini = arrint[i];
+		}
+		System.out.println(maxi+mini);
+    
+    ======================================================================================
