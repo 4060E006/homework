@@ -12,4 +12,4 @@
 
 0501 字串的附加+從螢幕讀取字串
 
-0508 append and assign
+0508 append and assign 函式呼叫 檔案輸入輸出
