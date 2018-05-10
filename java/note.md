@@ -37,5 +37,19 @@ System.out.println("輸入的數字中間加上空白將會將兩數相乘");
 		 int num1 = Integer.parseInt(str1[0]);
 		 int num2 = Integer.parseInt(str1[1]);
 		 int num3 = num1*num2; 
-		 System.out.println(num3); 		 
+		 System.out.println(num3);
+		 
+System.out.println("兩數中間空白加上運算符號即可以運算");		 
+		 Scanner input = new Scanner(System.in);
+		  String value = input.nextLine();
+		  String []str1 = value.split(" ");
+		  int v1 = Integer.parseInt(str1[0]); // 6
+		  int v2 = Integer.parseInt(str1[2]); // 5
+		  double v3 = 0;
+		  if (str1[1].equals("+")) v3 = v1+v2;
+		  if (str1[1].equals("-")) v3 = v1-v2;
+		  if (str1[1].equals("*")) v3 = v1*v2;
+		  if (str1[1].equals("/")) v3 =(double) v1/v2;
+		  Format fm = new DecimalFormat("##0.00");
+		  System.out.println(fm.format(v3)); 
 ``` 
