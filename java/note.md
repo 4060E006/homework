@@ -53,3 +53,43 @@ System.out.println("兩數中間空白加上運算符號即可以運算");
 		  Format fm = new DecimalFormat("##0.00");
 		  System.out.println(fm.format(v3)); 
 ``` 
+
+## BMI
+
+```
+package test;
+import java.text.DecimalFormat;
+import java.text.Format;
+import java.util.Scanner;
+public class test0518 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    Scanner input = new Scanner(System.in);
+    System.out.println("請輸入身高");
+    double cm = input.nextDouble();
+    System.out.println("請輸入體重");
+    double kg = input.nextDouble();
+    double m = cm*0.01;
+    double bmi = kg / (m*m);
+    
+    
+    Format fm = new DecimalFormat("##0.0");
+    System.out.print("您的BMI為:");
+    System.out.println(fm.format(bmi));
+	
+	if(bmi<18){
+    	System.out.println("過輕");
+    } else if(bmi<25){
+    	System.out.println("剛好");
+    } else if(bmi<30){
+    	System.out.println("過重");
+    } else {
+    	System.out.println("超重");
+    }
+    
+ }
+}
+
+```
+<img src="https://github.com/4060E006/homework/blob/master/picture/java0518.jpg" width="80%" height="80%">
