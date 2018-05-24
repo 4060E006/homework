@@ -93,3 +93,39 @@ public class test0518 {
 
 ```
 <img src="https://github.com/4060E006/homework/blob/master/picture/java0518.jpg" width="80%" height="80%">
+
+
+#### round = 四捨五入
+#### floor = 無條件捨去
+#### ceil = 無條件進位
+
+```
+public static void main(String[] args) {
+		
+        
+		String aa = "1.6";
+		String bb = "2.7";
+		double aa0 = Double.parseDouble(aa);
+		double bb0 = Double.parseDouble(bb);
+		
+		int aa2 = (int) Math.round(aa0);
+		int bb2 = (int) Math.round(aa0);
+				
+	
+		System.out.println((aa2+bb2));
+	}
+
+}
+```
+## 小數判斷
+
+```
+Scanner input = new Scanner(System.in);
+		double a = input.nextDouble();	
+		
+	       if(a%2==0||a%2==1){
+	        System.out.println("int");
+	       }else{
+	        System.out.println("double");
+	       }
+```
