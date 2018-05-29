@@ -15,3 +15,5 @@
 0508 append and assign 函式呼叫 檔案輸入輸出
 
 0515 類別練習 計算BMI練習
+
+0522~29 string類別(class)的方法的使用
