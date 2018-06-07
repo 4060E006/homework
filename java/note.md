@@ -1,3 +1,7 @@
+```
+練習網址 mgiga.com.tw
+w9.mgiga.com.tw
+```
 
 ###### constant = 常數
 ###### variable = 變數
@@ -129,3 +133,23 @@ Scanner input = new Scanner(System.in);
 	        System.out.println("double");
 	       }
 ```
+
+## 捨棄小數點前面的值
+```
+String A = input.next();
+A = A.replace("."," ");
+
+String []B = A.split(" ");
+int C = Integer.parseInt(B[1]);
+
+System.out.println(C)
+```
+
+## 取到小數第二位
+```
+String a1 = "1.54684";
+Double a = Double.paresDouble(s1);
+B = (double) Math.round((B*100))/100;
+```
+
+
