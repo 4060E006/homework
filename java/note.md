@@ -1,7 +1,7 @@
-```
-練習網址 mgiga.com.tw
-w9.mgiga.com.tw
-```
+
+# 練習網址 mgiga.com.tw
+# 考試 w9.mgiga.com.tw
+
 
 ###### constant = 常數
 ###### variable = 變數
