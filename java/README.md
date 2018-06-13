@@ -151,7 +151,7 @@ String a1 = "1.54684";
 Double a = Double.paresDouble(s1);
 B = (double) Math.round((B*100))/100;
 ```
-```
+
 可輸入學生的數學與英文成績(0~100整數)，將數學乘以0.65，將英文乘以0.35，’ 相加後印出結果
 (四捨五入到小數以下 1 位)。
 範例如下:
@@ -160,7 +160,7 @@ B = (double) Math.round((B*100))/100;
 (2) 使用者輸入 17 38
     則程式印出 24.4
 註: 主程式類別名稱請使用 MainClass。
-
+```
 import java.util.Scanner;
 import java.text.Format;
 import java.text.DecimalFormat;
