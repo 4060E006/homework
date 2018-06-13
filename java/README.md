@@ -302,5 +302,18 @@ System.out.println(fm.format(num1));
 }
 ```
 
-
+```
+Scanner input = new Scanner(System.in);
+		String a = input.nextLine();
+		
+		String []b = a.split(" ");
+		int max = 0;
+		
+		for(int i=0;i<b.length;i++){
+			int C = Integer.parseInt(b[i]);
+			if(C<=10) max++;
+			
+		}
+			System.out.println(max);
+```
 
