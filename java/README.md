@@ -2,6 +2,10 @@
 # 練習網址 mgiga.com.tw
 # 考試 w9.mgiga.com.tw
 
+
+
+## 計算任意三角形的面積
+
 ```
                 Scanner input = new Scanner(System.in);
 		System.out.println("請輸入a邊長:");
@@ -24,9 +28,11 @@
 		{
 			System.out.print("這不是一個三角形");
 		}
-
+		
+		
+java.lang.Math.sqrt = java平方的函數
 ```
-###### java.lang.Math.sqrt = java平方的函數
+
 
 
 ###### constant = 常數
