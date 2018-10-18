@@ -2,6 +2,32 @@
 # 練習網址 mgiga.com.tw
 # 考試 w9.mgiga.com.tw
 
+```
+                Scanner input = new Scanner(System.in);
+		System.out.println("請輸入a邊長:");
+		double a = input.nextDouble();
+		System.out.println("請輸入b邊長:");
+		double b = input.nextDouble();
+		System.out.println("請輸入c邊長:");
+		double c = input.nextDouble();
+		DecimalFormat fm =new DecimalFormat("##0.00");
+		
+		
+		if(a+b>c && b+c>a && a+c>b )
+		{
+			double s = (double)(a+b+c)/2;
+			System.out.print("這是一個三角形");
+			System.out.print("三角形面積為:");
+			System.out.print(fm.format(java.lang.Math.sqrt(s*(s-a)*(s-b)*(s-c))));//(參考海龍公式)
+		}
+		else
+		{
+			System.out.print("這不是一個三角形");
+		}
+
+```
+###### java.lang.Math.sqrt = java平方的函數
+
 
 ###### constant = 常數
 ###### variable = 變數
