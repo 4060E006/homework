@@ -19,17 +19,31 @@
 		
 		if(a+b>c && b+c>a && a+c>b )
 		{
-			double s = (double)(a+b+c)/2;
-			System.out.print("這是一個三角形");
-			System.out.print("三角形面積為:");
-			System.out.print(fm.format(java.lang.Math.sqrt(s*(s-a)*(s-b)*(s-c))));//(參考海龍公式)
+			if((a*a)==(b*b)+(c*c) || (b*b)==(a*a)+(c*c) || (c*c)==(a*a)+(b*b))
+			{
+				System.out.println("這是一個直角三角形");
+				System.out.print("他的面積為:");
+				System.out.print(fm.format(java.lang.Math.sqrt(s*(s-a)*(s-b)*(s-c))));//(參考海龍公式)
+			}
+			else
+			{
+				System.out.println("這是一個三角形");
+				System.out.print("他的面積為:");
+				System.out.print(fm.format(java.lang.Math.sqrt(s*(s-a)*(s-b)*(s-c))));//(參考海龍公式)
+			}
+			
+			
 		}
 		else
 		{
 			System.out.print("這不是一個三角形");
 		}
-		
-		
+
+	}
+
+}
+
+直角三角形判斷:任一邊的平方等於另外兩邊的平方相加
 java.lang.Math.sqrt = java平方的函數
 ```
 
